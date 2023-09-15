@@ -54,7 +54,8 @@ class BandsSeeder extends Seeder
                     "id" => Str::uuid()->toString(),
                     "name" => $band["name"],
                     "gender" => $band["gender"],
-                    "created_at" => Carbon::now()
+                    "created_at" => Carbon::now(),
+                    "updated_at" => Carbon::now(),
                 ]);
             }
         }
